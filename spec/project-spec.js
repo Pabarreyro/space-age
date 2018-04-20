@@ -13,7 +13,7 @@ describe('Space Age Calculator', function() {
     expect(convertYearsToSeconds(1)).toEqual(3.1536e+7);
   });
 
-  it('should calculate user age in seconds from birthday', function() {
+  it('should calculate user age in years from birthday', function() {
     expect(testUser18.calculateAge()).toEqual(18);
     expect(testUser18.calculateAge()).toEqual(90);
   });
