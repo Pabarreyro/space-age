@@ -13,8 +13,13 @@ describe('Space Age Calculator', function() {
     expect(convertYearsToSeconds(1)).toEqual(3.1536e+7);
   });
 
-  it('should calculate user age in seconds from birthday', function() {
-    expect(testUser18.calculateAge()).toEqual(567720000);
-    expect(testUser90.calculateAge()).toEqual(2838600000);
+  it('should calculate user age in year from birthday', function() {
+    expect(testUser18.calculateAge()).toEqual(18);
+    expect(testUser90.calculateAge()).toEqual(90);
+  });
+
+  it('should generate user age in years on Mercury, Venus, Mars and Juipter', function() {
+    expect(testUser18.ageMercury).toEqual(74.7);
+    expect(testUser90.ageMercury).toEqual(373.6);
   });
 });
