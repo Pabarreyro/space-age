@@ -1,13 +1,7 @@
-import { Class } from "./../src/class.js";
+// import { convertToSeconds } from "./../src/space_age.js";
 
-describe('Class', function() {
-  let reusableObject;
-
-  beforeEach(function() {
-    reusableObject = new Class(parameter);
-  });
-
-  it('describe test', function() {
-    expect(reusableObject.prop).toEqual(value);
+describe('Space Age Calculator', function() {
+  it('should convert one year to seconds', function() {
+    expect(convertYearsToSeconds(1)).toEqual(3.1536e+7);
   });
 });
