@@ -23,8 +23,13 @@ describe('Space Age Calculator', function() {
     expect(testUser90.ageMercury).toEqual(11826000000);
   });
 
-  it('should generate user age in second on Mercury, Venus, Mars and Juipter', function() {
-    expect(testUser18.expectancy).toEqual(2365200000);
-    expect(testUser90.expectancy).toEqual(2365200000);
+  it('should take in life expectancy in years and convert to seconds', function() {
+    expect(testUser18.expectancyEarth).toEqual(2365200000);
+    expect(testUser90.expectancyEarth).toEqual(2365200000);
+  });
+
+  it('should generate life expectancy on other planets', function() {
+    expect(testUser18.expectancyMercury).toEqual(9855000000);
+    expect(testUser90.expectancyMars).toEqual(1258085106);
   });
 });
