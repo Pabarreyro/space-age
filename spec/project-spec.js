@@ -5,8 +5,8 @@ describe('Space Age Calculator', function() {
   let testUser90;
 
   beforeEach(function() {
-    testUser18 = new SpaceAge(2000, 4, 20);
-    testUser90 = new SpaceAge(1928, 4, 20);
+    testUser18 = new SpaceAge(2000, 4, 20, 75);
+    testUser90 = new SpaceAge(1928, 4, 20, 75);
   });
 
   it('should convert 1 year to seconds', function() {
@@ -19,7 +19,12 @@ describe('Space Age Calculator', function() {
   });
 
   it('should generate user age in second on Mercury, Venus, Mars and Juipter', function() {
-    expect(testUser18.ageMercury).toEqual(2365500000);
-    expect(testUser90.ageMercury).toEqual(11827500000);
+    expect(testUser18.ageMercury).toEqual(2365200000);
+    expect(testUser90.ageMercury).toEqual(11826000000);
+  });
+
+  it('should generate user age in second on Mercury, Venus, Mars and Juipter', function() {
+    expect(testUser18.expectancy).toEqual(2365200000);
+    expect(testUser90.expectancy).toEqual(2365200000);
   });
 });
