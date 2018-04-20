@@ -1,11 +1,5 @@
-class SpaceAge {
-  constructor(parameter) {
-    this.prop = parameter;
-  }
-
-  convertToSeconds() {
-    this.prop = value;
-  }
+function convertYearsToSeconds(years) {
+  return years * 3.1536e+7;
 }
 
-export { Class };
+export { convertYearsToSeconds };
