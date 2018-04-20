@@ -16,8 +16,8 @@ class SpaceAge {
     } else {
       age += this.now.getUTCFullYear() - this.birthday.getUTCFullYear();
     }
-    return age;
-    // return convertYearsToSeconds(age);
+    
+    return convertYearsToSeconds(age);
   }
 
 }
