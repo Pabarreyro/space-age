@@ -1,4 +1,4 @@
-# **Super Galactic**
+# **Super Galactic: Space Age Calculator**
 
 ### _by_ Pablo Barreyro
 
