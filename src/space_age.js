@@ -4,6 +4,7 @@ class SpaceAge {
     this.birthday = new Date(birthYear, birthMonth-1, birthDay);
     this.expectancyEarth = convertYearsToSeconds(lifeExpectancy);
     this.ageEarth = this.calculateAge();
+    this.lifeRemaining = this.expectancyEarth - this.ageEarth;
     this.ageMercury = this.ageEarth / 0.24;
     this.expectancyMercury = Math.floor(this.expectancyEarth / 0.24);
     this.ageVenus = this.ageEarth / 0.62;
