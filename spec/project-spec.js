@@ -33,7 +33,7 @@ describe('Space Age Calculator', function() {
     expect(testUser90.expectancyMars).toEqual(1258085106);
   });
 
-  it('should calculate remaining life on other planets', function() {
+  it('should calculate remaining life on Earth', function() {
     expect(testUser18.lifeRemaining).toEqual(1797552000);
     expect(testUser90.lifeRemaining).toEqual(-473040000);
   });
