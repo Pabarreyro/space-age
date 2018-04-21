@@ -1,4 +1,4 @@
-import { convertYearsToSeconds, SpaceAge } from "./../src/space_age.js";
+import { SpaceAge } from "./../src/space_age.js";
 
 describe('Space Age Calculator', function() {
   let testUser18;
@@ -7,10 +7,6 @@ describe('Space Age Calculator', function() {
   beforeEach(function() {
     testUser18 = new SpaceAge(2000, 4, 20, 75);
     testUser90 = new SpaceAge(1928, 4, 20, 75);
-  });
-
-  it('should convert 1 year to seconds', function() {
-    expect(convertYearsToSeconds(1)).toEqual(3.1536e+7);
   });
 
   it('should calculate user age in year from birthday', function() {
