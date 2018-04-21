@@ -2,7 +2,7 @@ class SpaceAge {
   constructor(birthYear, birthMonth, birthDay, lifeExpectancy) {
     this.now = new Date();
     this.birthday = new Date(birthYear, birthMonth-1, birthDay);
-    this.expectancyEarth = convertYearsToSeconds(lifeExpectancy);
+    this.expectancyEarth = lifeExpectancy;
     this.ageEarth = this.calculateAge();
     this.lifeRemaining = this.expectancyEarth - this.ageEarth;
     this.ageMercury = this.ageEarth / 0.24;
@@ -27,7 +27,7 @@ class SpaceAge {
       age += this.now.getUTCFullYear() - this.birthday.getUTCFullYear();
     }
 
-    return convertYearsToSeconds(age);
+    return age;
   }
 }
 
