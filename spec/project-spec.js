@@ -14,8 +14,8 @@ describe('Space Age Calculator', function() {
   });
 
   it('should calculate user age in year from birthday', function() {
-    expect(testUser18.calculateAge()).toEqual(567648000);
-    expect(testUser90.calculateAge()).toEqual(2838240000);
+    expect(testUser18.ageEarth).toEqual(567648000);
+    expect(testUser90.ageEarth).toEqual(2838240000);
   });
 
   it('should generate user age in second on Mercury, Venus, Mars and Juipter', function() {
@@ -31,5 +31,15 @@ describe('Space Age Calculator', function() {
   it('should generate life expectancy on other planets', function() {
     expect(testUser18.expectancyMercury).toEqual(9855000000);
     expect(testUser90.expectancyMars).toEqual(1258085106);
+  });
+
+  it('should calculate remaining life on other planets', function() {
+    expect(testUser18.lifeRemaining).toEqual(1797552000);
+    expect(testUser90.lifeRemaining).toEqual(-473040000);
+  });
+
+  it('should generate remaining life on other planets', function() {
+    expect(testUser18.lifeRemainingMercury).toEqual(5.66876e+16);
+    expect(testUser90.lifeRemainingMars).toEqual(-1.4917789e+16);
   });
 });
